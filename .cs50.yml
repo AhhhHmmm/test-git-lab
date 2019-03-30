@@ -5,5 +5,12 @@ lab50:
     - terminal
     - browser
   files:
-    - !include test.py
+    - !include test.py 
+  check50:
+    checks:
+      hello world:
+        - run: python3 hello.py
+          stdout: Hello, world!
+          exit: 0
+
 
